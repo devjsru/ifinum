@@ -5235,27 +5235,8 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{URL}}/counteragents/:counteragentId/contacts",
-                  "host": [
-                    "{{URL}}"
-                  ],
-                  "path": [
-                    "counteragents",
-                    ":counteragentId",
-                    "contacts"
-                  ],
-                  "variable": [
-                    {
-                      "key": "counteragentId",
-                      "value": "{{counteragentId}}"
-                    }
-                  ]
-                }
+                "body": {},
+                "url": "{{url}}/counteragents/{{counteragentId}}/contacts"
               },
               "response": []
             },
