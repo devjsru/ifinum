@@ -5278,27 +5278,8 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{URL}}/counteragents/:counteragentId/requisite",
-                  "host": [
-                    "{{URL}}"
-                  ],
-                  "path": [
-                    "counteragents",
-                    ":counteragentId",
-                    "requisite"
-                  ],
-                  "variable": [
-                    {
-                      "key": "counteragentId",
-                      "value": "{{counteragentId}}"
-                    }
-                  ]
-                }
+                "body": {},
+                "url": "{{url}}/counteragents/{{counteragentId}}/requisite"
               },
               "response": []
             },
