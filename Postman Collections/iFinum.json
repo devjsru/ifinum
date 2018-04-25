@@ -5398,25 +5398,7 @@
                 "method": "GET",
                 "header": [],
                 "body": {},
-                "url": {
-                  "raw": "{{url}}/pdf/invoice/{{invoiceId}}/download?token={{token}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "pdf",
-                    "invoice",
-                    "{{invoiceId}}",
-                    "download"
-                  ],
-                  "query": [
-                    {
-                      "key": "token",
-                      "value": "{{token}}",
-                      "equals": true
-                    }
-                  ]
-                }
+                "url": ""
               },
               "response": []
             }
