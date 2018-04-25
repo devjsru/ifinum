@@ -3105,6 +3105,19 @@
                 {
                   "_postman_id": "bb827548-44ef-471c-9ff2-57623aa84750",
                   "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0438\u043d\u0432\u043e\u0439\u0441",
+                  "event": [
+                    {
+                      "listen": "test",
+                      "script": {
+                        "id": "1922597d-ba61-45e9-9737-725222e43535",
+                        "type": "text/javascript",
+                        "exec": [
+                          "var data = JSON.parse(responseBody)",
+                          "pm.environment.set('invoiceId', data)"
+                        ]
+                      }
+                    }
+                  ],
                   "request": {
                     "method": "POST",
                     "header": [
@@ -3119,7 +3132,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n\t\"direction\": \"sales\",\n\t\"number\": \"ENV-0001\",\n\t\"date_created\": 0,\n\t\"positions\": [\n\t\t{\n\t\t\t\"product\": \"item\",\n\t\t\t\"type\": \"product\",\n\t\t\t\"qty\": 3,\n\t\t\t\"rate\": 300,\n\t\t\t\"tax\": \"SR\"\n\t\t}\t\n\t],\n\t\"counteragent_id\": 2\n}\n"
+                      "raw": "{\n  \"direction\": \"sales\",\n  \"number\": \"ENV-0001\",\n  \"date_created\": 0,\n  \"positions\": [\n    {\n      \"product\": \"item\",\n      \"type\": \"product\",\n      \"qty\": 3,\n      \"rate\": 300,\n      \"tax\": \"SR\"\n    }  \n  ],\n  \"counteragent_id\": 183\n}\n"
                     },
                     "url": "{{url}}/accounts/{{accountId}}/invoices"
                   },
