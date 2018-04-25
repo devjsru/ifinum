@@ -5091,6 +5091,19 @@
             {
               "_postman_id": "fff86cd2-214e-4186-a4c1-56efdf065ff0",
               "name": "Create new counteragent",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "a194d19a-4ce4-4f48-9ae1-8929e9cff205",
+                    "type": "text/javascript",
+                    "exec": [
+                      "var data = JSON.parse(responseBody)",
+                      "pm.environment.set('counteragentId', data)"
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "POST",
                 "header": [
@@ -5105,9 +5118,9 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": ""
+                  "raw": "{\n\t\"direction\": \"purchases\",\n\t\"company_name\": \"Testing\",\n    \"alias\": \"test\",\n    \"trn\": \"test\",\n    \"note\": \"test\",\n    \"company_id\": 75\n}"
                 },
-                "url": "{{URL}}/counteragents"
+                "url": "{{url}}/counteragents"
               },
               "response": []
             },
