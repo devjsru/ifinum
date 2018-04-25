@@ -5302,23 +5302,7 @@
                   "mode": "raw",
                   "raw": ""
                 },
-                "url": {
-                  "raw": "{{URL}}/counteragents/:counteragentId/requisite",
-                  "host": [
-                    "{{URL}}"
-                  ],
-                  "path": [
-                    "counteragents",
-                    ":counteragentId",
-                    "requisite"
-                  ],
-                  "variable": [
-                    {
-                      "key": "counteragentId",
-                      "value": "{{counteragentId}}"
-                    }
-                  ]
-                }
+                "url": "{{url}}/counteragents/{{counteragentId}}/requisite"
               },
               "response": []
             }
@@ -5414,7 +5398,25 @@
                 "method": "GET",
                 "header": [],
                 "body": {},
-                "url": ""
+                "url": {
+                  "raw": "{{url}}/pdf/invoice/{{invoiceId}}/download?token={{token}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "pdf",
+                    "invoice",
+                    "{{invoiceId}}",
+                    "download"
+                  ],
+                  "query": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "equals": true
+                    }
+                  ]
+                }
               },
               "response": []
             }
