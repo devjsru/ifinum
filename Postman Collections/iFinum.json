@@ -5083,11 +5083,8 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "{{URL}}/counteragents"
+                "body": {},
+                "url": "{{url}}/counteragents"
               },
               "response": []
             },
