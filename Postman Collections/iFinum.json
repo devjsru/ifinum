@@ -5382,6 +5382,19 @@
             {
               "_postman_id": "29ccbcfa-e8ab-423c-a3b0-8708e220b062",
               "name": "Create pdf, upload it on s3 and get link",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "6d2fe5ab-21b1-448d-a4de-7cb965279a60",
+                    "type": "text/javascript",
+                    "exec": [
+                      "var data = JSON.parse(responseBody)",
+                      "pm.environment.set('invoiceUrl', data)"
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
@@ -5394,31 +5407,8 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{URL}}/pdf/:type/:id",
-                  "host": [
-                    "{{URL}}"
-                  ],
-                  "path": [
-                    "pdf",
-                    ":type",
-                    ":id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "type",
-                      "value": "{{type}}"
-                    },
-                    {
-                      "key": "id",
-                      "value": "{{id}}"
-                    }
-                  ]
-                }
+                "body": {},
+                "url": "{{url}}/pdf/invoice/{{invoiceId}}"
               },
               "response": []
             },
