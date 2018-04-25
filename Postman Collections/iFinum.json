@@ -855,6 +855,19 @@
         {
           "_postman_id": "7c310721-624e-4ebc-8514-1d2fc63265dd",
           "name": "\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "4dfa3dad-b87b-4cfe-a4b2-f66fc14d9e91",
+                "type": "text/javascript",
+                "exec": [
+                  "var data = JSON.parse(responseBody)",
+                  "pm.environment.set('token', data.file_token.token)"
+                ]
+              }
+            }
+          ],
           "request": {
             "method": "GET",
             "header": [
@@ -871,10 +884,7 @@
                 "value": "Bearer {{access_token}}"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
+            "body": {},
             "url": "{{url}}/self",
             "description": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043f\u043e \u0442\u0435\u043a\u0443\u0449\u0435\u043c\u0443 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u043e\u043c\u0443 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044e \u0441\u043e \u0432\u0441\u0435\u043c\u0438 \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u044f\u043c\u0438 \u043a \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f\u043c, \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430\u043c, \u0442\u0430\u0440\u0438\u0444\u043d\u044b\u043c \u043f\u043b\u0430\u043d\u0430\u043c etc"
           },
@@ -5398,7 +5408,25 @@
                 "method": "GET",
                 "header": [],
                 "body": {},
-                "url": ""
+                "url": {
+                  "raw": "{{url}}/pdf/invoice/{{invoiceId}}/download?token={{token}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "pdf",
+                    "invoice",
+                    "{{invoiceId}}",
+                    "download"
+                  ],
+                  "query": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "equals": true
+                    }
+                  ]
+                }
               },
               "response": []
             }
