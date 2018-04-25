@@ -5423,7 +5423,8 @@
                     {
                       "key": "token",
                       "value": "{{token}}",
-                      "equals": true
+                      "equals": true,
+                      "description": "file_token.token from self"
                     }
                   ]
                 }
