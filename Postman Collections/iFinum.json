@@ -7280,11 +7280,25 @@
                 "value": "application/json"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": "{{url}}/files/{{fileId}}/data"
+            "body": {},
+            "url": {
+              "raw": "{{url}}/files/{{fileId}}/data?token={{token}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "files",
+                "{{fileId}}",
+                "data"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "equals": true
+                }
+              ]
+            }
           },
           "response": [
             {
