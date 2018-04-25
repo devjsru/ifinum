@@ -7102,6 +7102,19 @@
         {
           "_postman_id": "0da3c6de-d061-41bd-b011-31633d5138bb",
           "name": "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0444\u0430\u0439\u043b",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ac8b0a4b-1bb4-41d8-a192-7b3da7115fdf",
+                "type": "text/javascript",
+                "exec": [
+                  "var data = JSON.parse(responseBody)",
+                  "pm.environment.set('fileId', data.id)"
+                ]
+              }
+            }
+          ],
           "request": {
             "method": "POST",
             "header": [
@@ -7210,6 +7223,87 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\"company_id\":\"57\",\"url\":\"5ace252ca331dmashreq exl.csv\",\"name\":\"mashreq exl.csv\",\"updated_at\":\"1523459373\",\"created_at\":\"1523459373\",\"id\":21}"
+            },
+            {
+              "id": "34add2a7-e5c2-4a83-85e0-b18eb5dd9036",
+              "name": "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0444\u0430\u0439\u043b",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "multipart/form-data",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "company_id",
+                      "value": "{{companyId}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": {
+                        "0": {}
+                      }
+                    }
+                  ]
+                },
+                "url": "{{url}}/files"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 25 Apr 2018 12:56:49 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.2.4",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"company_id\":\"75\",\"url\":\"5ae07b10e7578test.csv\",\"name\":\"test.csv\",\"updated_at\":\"1524661009\",\"created_at\":\"1524661009\",\"id\":47}"
             }
           ]
         },
