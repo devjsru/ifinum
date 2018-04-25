@@ -5465,6 +5465,17 @@
                 }
               },
               "response": []
+            },
+            {
+              "_postman_id": "bd0d777b-763a-404c-8cdb-5e9d68b9d5dd",
+              "name": "Create and download pdf",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
