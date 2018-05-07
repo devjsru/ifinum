@@ -5653,9 +5653,9 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": ""
+                  "raw": "{\n\t\"account_id\": {{accountId}},\n\t\"type\": \"vat_return\",\n\t\"since\": 1525703768,\n\t\"to\": \"1528329600\"\n}"
                 },
-                "url": "{{URL}}/reports",
+                "url": "{{url}}/reports",
                 "description": "Accepted values: vat_faf, vat_return"
               },
               "response": []
