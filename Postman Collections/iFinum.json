@@ -5659,6 +5659,18 @@
                 "description": "Accepted values: vat_faf, vat_return"
               },
               "response": []
+            },
+            {
+              "_postman_id": "80a9f5ea-b631-4ef2-8937-90a15b2c1532",
+              "name": "Get report",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "",
+                "description": "Get report by id"
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
