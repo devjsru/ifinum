@@ -5663,7 +5663,7 @@
                 "method": "GET",
                 "header": [],
                 "body": {},
-                "url": "",
+                "url": "{{url}}/reports/{{reportId}}",
                 "description": "Get report by id"
               },
               "response": []
