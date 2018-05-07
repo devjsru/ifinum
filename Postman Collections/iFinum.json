@@ -5676,10 +5676,10 @@
               "_postman_id": "b61b5b69-dc80-4cd7-a2c5-057a451a7cbf",
               "name": "Delete report",
               "request": {
-                "method": "GET",
+                "method": "DELETE",
                 "header": [],
                 "body": {},
-                "url": "",
+                "url": "{{url}}/reports/{{reportId}}",
                 "description": "Delete report id"
               },
               "response": []
