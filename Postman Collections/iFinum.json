@@ -5671,6 +5671,18 @@
                 "description": "Get report by id"
               },
               "response": []
+            },
+            {
+              "_postman_id": "b61b5b69-dc80-4cd7-a2c5-057a451a7cbf",
+              "name": "Delete report",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "",
+                "description": "Delete report id"
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
