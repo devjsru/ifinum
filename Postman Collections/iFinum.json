@@ -5602,6 +5602,19 @@
             {
               "_postman_id": "6cad5990-a1b8-4fc7-8ab0-c39a44d5ec0e",
               "name": "Get reports",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "b52c1220-5ca2-4d8b-bc60-9afc5a4b8dc7",
+                    "type": "text/javascript",
+                    "exec": [
+                      "var data = JSON.parse(responseBody)",
+                      "pm.environment.set('reportId', data[0].id)"
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
@@ -5614,25 +5627,8 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{URL}}/reports?account_id={{account_id}}",
-                  "host": [
-                    "{{URL}}"
-                  ],
-                  "path": [
-                    "reports"
-                  ],
-                  "query": [
-                    {
-                      "key": "account_id",
-                      "value": "{{account_id}}"
-                    }
-                  ]
-                }
+                "body": {},
+                "url": "{{url}}/reports"
               },
               "response": []
             },
