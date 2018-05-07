@@ -1169,6 +1169,99 @@
               "body": "\"\""
             }
           ]
+        },
+        {
+          "_postman_id": "a63102c6-adc1-4125-814c-1b5815335ce2",
+          "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 (article) \u043a \u0437\u0430\u043f\u0440\u043e\u0441\u0443 (ticket) Copy",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n   \"to\": \"\",\n   \"cc\": \"\",\n   \"subject\": \"some subject\",\n   \"body\": \"huhuhuu<br>huhuhuu<br>huhuhuu<br><br>\",\n   \"content_type\": \"text/html\",\n   \"type\": \"note\",\n   \"internal\": false,\n   \"time_unit\": \"12\",\n   \"file_ids\":[86, 93]\n}"
+            },
+            "url": "{{url}}/companies/{{companyId}}/tickets/{{ticketId}}/articles",
+            "description": "\u0411\u043e\u043b\u044c\u0448\u0435 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438 \u043e\u0431 API Zammad \u043c\u043e\u0436\u043d\u043e \u043d\u0430\u0439\u0442\u0438 \u0432 \u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u043c \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u0435 https://docs.zammad.org/en/latest/. \u0417\u0430\u043f\u0440\u043e\u0441\u044b \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043d\u0430\u043f\u0440\u044f\u043c\u0443\u044e \u0432 Zammad, \u043f\u0440\u043e\u0445\u043e\u0434\u044f \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0431\u044d\u043a\u0435\u043d\u0434\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0430\u043b\u0438\u0434\u0430\u0446\u0438\u044e."
+          },
+          "response": [
+            {
+              "id": "1b1f40eb-88d6-4585-ae85-3ff29859c36d",
+              "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 (article) \u043a \u0437\u0430\u043f\u0440\u043e\u0441\u0443 (ticket)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n   \"to\": \"\",\n   \"cc\": \"\",\n   \"subject\": \"some subject\",\n   \"body\": \"huhuhuu<br>huhuhuu<br>huhuhuu<br><br>\",\n   \"content_type\": \"text/html\",\n   \"type\": \"note\",\n   \"internal\": false,\n   \"time_unit\": \"12\",\n   \"file_ids\":[86, 93]\n}"
+                },
+                "url": "{{url}}/companies/{{companyId}}/tickets/{{ticketId}}/articles"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 04 May 2018 13:04:21 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.2.5",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "241"
+            }
+          ]
         }
       ]
     },
@@ -1318,99 +1411,6 @@
                   "response": [
                     {
                       "id": "66be4a6f-5ea1-4413-b7c7-e924bccca8e3",
-                      "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 (article) \u043a \u0437\u0430\u043f\u0440\u043e\u0441\u0443 (ticket)",
-                      "originalRequest": {
-                        "method": "POST",
-                        "header": [
-                          {
-                            "key": "Accept",
-                            "value": "application/json",
-                            "disabled": false
-                          },
-                          {
-                            "key": "Content-Type",
-                            "value": "application/json",
-                            "disabled": false
-                          }
-                        ],
-                        "body": {
-                          "mode": "raw",
-                          "raw": "{\n   \"to\": \"\",\n   \"cc\": \"\",\n   \"subject\": \"some subject\",\n   \"body\": \"huhuhuu<br>huhuhuu<br>huhuhuu<br><br>\",\n   \"content_type\": \"text/html\",\n   \"type\": \"note\",\n   \"internal\": false,\n   \"time_unit\": \"12\",\n   \"file_ids\":[86, 93]\n}"
-                        },
-                        "url": "{{url}}/companies/{{companyId}}/tickets/{{ticketId}}/articles"
-                      },
-                      "status": "Created",
-                      "code": 201,
-                      "_postman_previewlanguage": "json",
-                      "header": [
-                        {
-                          "key": "Cache-Control",
-                          "value": "no-cache, private",
-                          "name": "Cache-Control",
-                          "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
-                        },
-                        {
-                          "key": "Content-Type",
-                          "value": "application/json",
-                          "name": "Content-Type",
-                          "description": "The mime type of this content"
-                        },
-                        {
-                          "key": "Date",
-                          "value": "Fri, 04 May 2018 13:04:21 GMT",
-                          "name": "Date",
-                          "description": "The date and time that the message was sent"
-                        },
-                        {
-                          "key": "Server",
-                          "value": "nginx",
-                          "name": "Server",
-                          "description": "A name for the server"
-                        },
-                        {
-                          "key": "Transfer-Encoding",
-                          "value": "chunked",
-                          "name": "Transfer-Encoding",
-                          "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-                        },
-                        {
-                          "key": "X-Powered-By",
-                          "value": "PHP/7.2.5",
-                          "name": "X-Powered-By",
-                          "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-                        }
-                      ],
-                      "cookie": [],
-                      "responseTime": null,
-                      "body": "241"
-                    }
-                  ]
-                },
-                {
-                  "_postman_id": "a63102c6-adc1-4125-814c-1b5815335ce2",
-                  "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 (article) \u043a \u0437\u0430\u043f\u0440\u043e\u0441\u0443 (ticket) Copy",
-                  "request": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "Accept",
-                        "value": "application/json"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n   \"to\": \"\",\n   \"cc\": \"\",\n   \"subject\": \"some subject\",\n   \"body\": \"huhuhuu<br>huhuhuu<br>huhuhuu<br><br>\",\n   \"content_type\": \"text/html\",\n   \"type\": \"note\",\n   \"internal\": false,\n   \"time_unit\": \"12\",\n   \"file_ids\":[86, 93]\n}"
-                    },
-                    "url": "{{url}}/companies/{{companyId}}/tickets/{{ticketId}}/articles",
-                    "description": "\u0411\u043e\u043b\u044c\u0448\u0435 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438 \u043e\u0431 API Zammad \u043c\u043e\u0436\u043d\u043e \u043d\u0430\u0439\u0442\u0438 \u0432 \u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u043c \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u0435 https://docs.zammad.org/en/latest/. \u0417\u0430\u043f\u0440\u043e\u0441\u044b \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043d\u0430\u043f\u0440\u044f\u043c\u0443\u044e \u0432 Zammad, \u043f\u0440\u043e\u0445\u043e\u0434\u044f \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0431\u044d\u043a\u0435\u043d\u0434\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0430\u043b\u0438\u0434\u0430\u0446\u0438\u044e."
-                  },
-                  "response": [
-                    {
-                      "id": "1b1f40eb-88d6-4585-ae85-3ff29859c36d",
                       "name": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 (article) \u043a \u0437\u0430\u043f\u0440\u043e\u0441\u0443 (ticket)",
                       "originalRequest": {
                         "method": "POST",
