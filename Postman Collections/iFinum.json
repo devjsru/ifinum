@@ -5755,7 +5755,22 @@
                 "method": "GET",
                 "header": [],
                 "body": {},
-                "url": "",
+                "url": {
+                  "raw": "{{url}}/reports?type=vat_return",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "reports"
+                  ],
+                  "query": [
+                    {
+                      "key": "type",
+                      "value": "vat_return",
+                      "equals": true
+                    }
+                  ]
+                },
                 "description": "Get report by type"
               },
               "response": []
