@@ -5747,6 +5747,18 @@
                 "description": "Delete report id"
               },
               "response": []
+            },
+            {
+              "_postman_id": "093c4065-706b-497c-ab9e-b8539cd5e83d",
+              "name": "Get reports by type",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "",
+                "description": "Get report by type"
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
