@@ -1439,11 +1439,10 @@
                     {
                       "listen": "test",
                       "script": {
-                        "id": "3b77195b-e4b5-41a2-b501-3e5f1e0e28dd",
+                        "id": "fbbcfbea-5eb9-4479-a97b-1e8cf6b9afb1",
                         "type": "text/javascript",
                         "exec": [
-                          "var data = JSON.parse(responseBody)",
-                          "pm.environment.set('articleId', data[0].id)"
+                          ""
                         ]
                       }
                     }
