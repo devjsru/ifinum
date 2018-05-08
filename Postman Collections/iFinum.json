@@ -1426,11 +1426,11 @@
                     {
                       "listen": "test",
                       "script": {
-                        "id": "2916e5ad-460c-4d0f-af44-155783ded9b6",
+                        "id": "3b77195b-e4b5-41a2-b501-3e5f1e0e28dd",
                         "type": "text/javascript",
                         "exec": [
                           "var data = JSON.parse(responseBody)",
-                          "pm.environment.set('arcticleId', data[0].id)"
+                          "pm.environment.set('articleId', data[0].id)"
                         ]
                       }
                     }
