@@ -1213,10 +1213,6 @@
                       {
                         "key": "Content-Type",
                         "value": "application/json"
-                      },
-                      {
-                        "key": "X-On-Behalf-Of",
-                        "value": "h461514@nwytg.com"
                       }
                     ],
                     "body": {
