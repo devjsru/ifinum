@@ -1785,6 +1785,17 @@
                     "url": ""
                   },
                   "response": []
+                },
+                {
+                  "_postman_id": "ea07b655-2987-4d00-bd58-b82c6ec21d99",
+                  "name": "Create TICKET",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {},
+                    "url": ""
+                  },
+                  "response": []
                 }
               ],
               "_postman_isSubFolder": true
