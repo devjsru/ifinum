@@ -7528,6 +7528,17 @@
             "url": "{{url}}/amount_types"
           },
           "response": []
+        },
+        {
+          "_postman_id": "ce2f5541-0d61-416a-86c3-ea7010b19e96",
+          "name": "definitions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": ""
+          },
+          "response": []
         }
       ],
       "auth": {
