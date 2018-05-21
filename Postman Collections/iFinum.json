@@ -5508,7 +5508,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n\t\"direction\": \"purchases\",\n\t\"company_name\": \"Testing\",\n    \"alias\": \"test\",\n    \"trn\": \"test\",\n    \"note\": \"test\",\n    \"company_id\": 75\n}"
+                  "raw": "{\n\t\"direction\": \"purchases\",\n\t\"company_name\": \"Testing\",\n    \"alias\": \"test\",\n    \"trn\": \"test\",\n    \"note\": \"test\",\n    \"company_id\": {{companyId}}\n}"
                 },
                 "url": "{{url}}/counteragents"
               },
