@@ -3567,7 +3567,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": ""
+                      "raw": "{\n  \"direction\": \"sales\",\n  \"number\": \"ENV-0001\",\n  \"date_created\": 0,\n  \"positions\": [\n    {\n      \"product\": \"item\",\n      \"type\": \"product\",\n      \"qty\": 3,\n      \"rate\": 300,\n      \"tax\": \"SR\"\n    }  \n  ],\n  \"counteragent_id\": {{counteragentId}},\n  \"account_id\" : {{accountId}}\n}"
                     },
                     "url": "{{url}}/accounts/{{accountId}}/invoices/{{invoiceId}}"
                   },
